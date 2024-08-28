@@ -1,0 +1,181 @@
+/* Estilos globales */
+*{/*Esto es para poner en todos los elementos para despues modificarlos*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*El tamaño va a ser de acuerdo a las medidas NO AL CONTENIDO*/
+}
+
+/* Body y Header */
+/*Los colores implementados estaran en hexadecimales para comodidad*/
+body{
+    background-color: #fff;
+    height: 100%;
+}
+header{
+    height: 50px;
+    background-color: #fff;/*para ver que hagoCAMBIA EL COLOR*/
+    display: flex;/*CONTENEDOR FLEXIBLE A NIVEL BLOQUE*/
+    justify-content: end;/*Justificar a lado Derecho*/
+    padding: 0 15px;/*De arriba y abajo 0 y de izquierda y derecha tendran 10*/
+    flex-wrap: wrap
+}
+/* Opciones de header */
+header .opciones{
+    display: flex;/*CONTENEDOR FLEXIBLE A NIVEL BLOQUE*/
+    gap: 15px;/*Separación entre los elementos */
+    align-items: center; /* Alinear elementos verticalmente */
+}
+header .opciones a{
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .opciones a:hover{
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+header .opciones img{
+    height: 25px;
+    width: 25px;
+    display: inline-block;/*tenga ancho y alto*/
+}
+header .opciones img:hover{
+    border-radius: 20px;  /* Radio de borde de 20px */
+    box-shadow: 0 1px 6px 0 #20212447; /* Sombra al pasar el mouse */
+    border-color: #dfe1e500;/* Color de borde al pasar el mouse */
+}
+header .opciones button{
+    background-color: #0b57d0;/*Color del boton*/
+    color: #fff;/*Color de letra*/
+    font-size: 14px;
+    display: inline-block;/* Mostrar como bloque en línea */
+    border-radius: 100px;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header .opciones button:hover{
+    box-shadow: 0 1px 6px 0 #20212447;  /* Sombra al pasar el mouse */
+    border-color: #dfe1e500;
+}
+
+/*Main*/
+main{
+    padding: 11%;
+}
+main .contenido{
+    display: flex;/* Contenedor flexible */
+    flex-direction: column;/* Dirección de columna */
+    align-items: center;
+    gap: 30px;  /* Separación entre elementos */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+main .contenido .logo{
+    max-width: 30%;
+    max-height: 30%;
+}
+
+main .contenido .buscador{
+    padding: 8px;
+    height: 40px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px;
+    border: 2px solid  #dfe1e5;/*Borde solido color gris*/
+
+}
+main .contenido .buscador:hover{
+    box-shadow: 0 1px 6px 0 #20212447;  /* Sombra al pasar el mouse */
+    border-color: #dfe1e500;
+}
+main .contenido .buscador input{
+    width: 450px;
+    height: 20px;
+    border: none;/*Sin borde*/
+    outline: none;/*Contorno del input se lo quitamos*/
+}
+
+main .contenido .buscador .lupa{
+    width: 32px;
+    height: 32px;
+    background-position: center;
+}
+
+main .contenido .buscador button{
+    border: none;
+    background-color: transparent;/* Fondo transparente */
+    cursor: pointer;/* Cursor de puntero */
+    background-position: center;/* Posición de fondo central */
+}
+main .buscador-botones button{
+    border: none;
+    cursor: pointer; /* Cursor de puntero */
+    color: #000;
+    background-color: #f7f8f9;/* Fondo gris claro */
+    border-radius: 8px;
+    padding: 10px 12px;
+    gap: 10px;
+    display:inline;/* Mostrar en línea */
+}
+main .buscador-botones button:hover{
+    box-shadow: 0 1px 6px 0 #20212447; /* Sombra al pasar el mouse */
+    border-color: #dfe1e500;
+}
+main .contenido p{
+    font-size: small;/* Tamaño de fuente pequeño */
+}
+
+footer .pie1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0; /* Borde inferior sólido gris */
+    font-size: 15px;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;/* Permite wrap de elementos por si se reduce un poco la pantalla */
+    justify-content: space-between;/* Justificar entre elementos */
+    background-color: #f7f8f9;
+    height: 50px;
+}
+
+footer .pie2{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f8f9;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+}
+
+footer .pie2 .izq{
+    display: flex;/*CONTENEDOR FLEXIBLE*/
+    gap: 15px;/*separacion entre los bloques */
+    align-items: center;
+    padding: 20px ;
+}
+footer .pie2 .izq a{
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer .pie2 .der{
+    display: flex;/*CONTENEDOR FLEXIBLE*/
+    gap: 15px;/*separacion entre los bloques */
+    align-items: center;
+    justify-content: right;
+    padding: 20px ;
+}
+footer .pie2 .der a{
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .pie2 a:hover{
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
